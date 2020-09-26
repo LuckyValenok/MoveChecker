@@ -64,11 +64,11 @@ public class Main {
         }
     }
     
-    private static String readCoord(BufferedReader reader, String name) throws IOException {
-        String coord = reader.readLine();
+    private static String readCoord(BufferedReader reader, String msg) throws IOException {
+        String coord = reader.readLine().toUpperCase();
         while (!PATTERN.matcher(coord).matches()) {
-            System.out.println(name);
-            coord = reader.readLine();
+            System.out.println(msg);
+            coord = reader.readLine().toUpperCase();
         }
         return coord;
     }
