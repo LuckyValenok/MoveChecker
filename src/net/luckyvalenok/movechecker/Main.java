@@ -56,7 +56,7 @@ public class Main {
             case 4: // Слон
                 return absColumn == absRow;
             case 5: // Конь
-                return absColumn == 2 && absRow == 1;
+                return absColumn == 2 && absRow == 1 || absColumn == 1 && absRow == 2;
             case 6: // Пешка
                 return startColumn == endColumn && absRow < 2;
             default:
